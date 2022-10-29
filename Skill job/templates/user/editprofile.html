@@ -1,0 +1,62 @@
+{% extends '/user/base.html' %}
+{% block head %}
+    <title>Jobs </title>
+{% endblock %}
+
+{%block body%}
+<div>
+    <div class="container">
+        <h1>Edit profile</h1>
+        <form action="/user/profile/editprofile" method="post">
+            <div class="mb-3">
+                <label for="" class="form-label">Name</label>
+                <input type="text" class="form-control" id="" name="name" placeholder="Enter your name">
+              </div>
+            <div class="mb-3">
+            <label for="" class="form-label" style="display:flex;">About</label>
+            <textarea name="about" id="" cols="100"  rows="7"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Email Id</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email address">
+              
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="" name="phone" placeholder="Phone Number">
+              </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Designation</label>
+              <input type="text" class="form-control" id="" name="designation" placeholder="Ex : student">
+              
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">School</label>
+                <input type="text" class="form-control" id="" name="school" placeholder="Ex : University">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Skills</label>
+                <input type="text" class="form-control" id="" name="skills" placeholder="Ex : python, C , PHP, etc..">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Project</label>
+                <input type="text" class="form-control" id="" name="project" placeholder="project title">
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="form-label" style="display:flex;">Project Description</label>
+                <textarea name="description" id="" cols="100" rows="7"  ></textarea>
+            </div>
+              
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+
+    </div>
+</div>
+
+{% endblock %}  
